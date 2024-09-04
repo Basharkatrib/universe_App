@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>حساب معدل الطالب</title>
+</head>
+<body>
+    <div class="container">
+        <h1>حساب معدل الطالب</h1>
+        
+        <!-- اختيار التخصص -->
+        <select id="major-select">
+            <option value="برمجيات">برمجيات</option>
+            <option value="ذكاء">ذكاء</option>
+            <option value="شبكات">شبكات</option>
+        </select>
+
+        <div id="subjects-container">
+        </div>
+        
+        <button onclick="calculateAverage()">احسب المعدل</button>
+        
+        <button onclick="calculateDifferentialAverage()">حساب معدل التفاضل</button>
+        
+        <button onclick="resetFields()">إعادة تعيين</button>
+
+        <div class="result" id="result"></div>
+        <footer>
+            <i>Coding by Bashar ...</i>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
